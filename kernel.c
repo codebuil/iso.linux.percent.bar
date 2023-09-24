@@ -216,12 +216,13 @@ void invertScreen() {
 		int x=150;
 		int y=150;
 		unsigned char* addr;
+		int counter=0;
 		cls();
 		NULL=0;
 		
 		memoryStart = (unsigned char *)0x200000;
-		for (n=0;n<6;n=n+1)   
-			box(n*10,n*10,n*10+60,n*10+30,n);
+		for (n=0;n<199;n=n+1)   
+			hline(0,n,n,9);
 
 		return 0;	  
         }
